@@ -1,0 +1,482 @@
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 200;
+  
+}
+
+/* =======navbar ======== */
+
+.navname {
+  display: flex;
+  margin-left: 8rem;
+}
+.navname a {
+  font-size: 0.9rem;
+}
+ul li {
+  margin-left: 0.3rem;
+}
+
+.icon-box i {
+  font-size: 1.4rem;
+  opacity: 90%;
+}
+
+/* home-img  */
+.img1 {
+  width: 100%;
+  height: 100%;
+  padding: 20px 2rem;
+}
+.img1 img {
+  width: 100%;
+}
+.img1 video {
+  display: none;
+}
+
+/* ====view-all ======= */
+.view-all a {
+  position: absolute;
+  right: 150px;
+  font-size: 1.2rem;
+}
+.view-all a:hover {
+  opacity: 70%;
+}
+
+/* ======bags-list ============== */
+
+.img-par {
+  height: 30rem;
+  transition: 0.2s ease-in;
+}
+.img-par:hover {
+  transform: scale(1.1);
+}
+.img-par a > img {
+  height: 100%;
+  width: 100%;
+}
+
+/* =============scroll content 1 ============ */
+
+.scroll-container {
+  width: 100%;
+  overflow-x: auto;
+
+  white-space: nowrap;
+  margin-top: 5rem;
+  padding: 2rem;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.scroll-content {
+  display: inline-flex;
+}
+#scroll i {
+  font-size: 1.2rem;
+}
+#scroll {
+  text-align: center;
+}
+
+.item {
+  min-width: 300px;
+  height: 370px;
+  margin-right: 10px;
+  justify-content: center;
+}
+
+/* ========== hover animation ========= */
+.item .text-con {
+  position: relative;
+  bottom: 130px;
+  opacity: 0;
+  transition: opacity 0.7s;
+  color: white;
+  font-size: 2rem;
+  box-sizing: border-box;
+  background-color: rgba(73, 68, 68, 0.61);
+  visibility: hidden;
+  text-align: center;
+  background-color: opacity 30%;
+  margin-left: 7px;
+  width: 95%;
+}
+
+.text-con i {
+  position: relative;
+  bottom: 300px;
+  left: 147px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-weight: 300;
+  background-color: white;
+  color: rgb(7, 7, 7);
+}
+.item:hover .text-con,
+a {
+  visibility: visible;
+  opacity: 1;
+}
+.text-con a {
+  text-decoration: none;
+  color: black;
+}
+.text-con a:hover {
+  color: white;
+}
+.item img {
+  width: 100%;
+  height: 95%;
+}
+.item #price {
+  opacity: 70%;
+}
+.item p {
+  opacity: 60%;
+}
+.item #price:hover {
+  opacity: 30%;
+}
+.item .div > h4 {
+  position: relative;
+  bottom: 300px;
+}
+/* =============scroll content 2 ============ */
+
+.scroll-container1 {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  white-space: nowrap;
+  margin-top: 5rem;
+  padding: 2rem;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.scroll-content1 {
+  display: inline-flex;
+}
+.home-bags i {
+  font-size: 1.2rem;
+}
+.home-bags {
+  text-align: center;
+}
+
+.item1 {
+  min-width: 220px;
+  height: 320px;
+  margin-right: 10px;
+  justify-content: center;
+  font-size: 18px;
+}
+.item1 img {
+  width: 100%;
+  height: 70%;
+}
+.item1 #price {
+  opacity: 70%;
+}
+.item1 p {
+  opacity: 60%;
+}
+.item1 #price:hover {
+  opacity: 30%;
+}
+
+/* ========== hover animation 2 ========= */
+.item1 .text-con1 {
+  position: relative;
+  bottom: 130px;
+  opacity: 0;
+  transition: opacity 0.7s;
+  color: white;
+  font-size: 2rem;
+  box-sizing: border-box;
+  background-color: rgba(73, 68, 68, 0.61);
+  visibility: hidden;
+  text-align: center;
+  background-color: opacity 30%;
+  margin-left: 7px;
+  width: 95%;
+}
+
+.text-con1 i {
+  position: relative;
+  bottom: 220px;
+  left: 100px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-weight: 300;
+  /* background-color: white; */
+  color: rgb(7, 7, 7);
+}
+.item1:hover .text-con1,
+a {
+  visibility: visible;
+  opacity: 1;
+}
+.text-con1 a {
+  text-decoration: none;
+  color: black;
+}
+.text-con1 a:hover {
+  color: white;
+}
+.item1 img {
+  width: 100%;
+  height: 90%;
+}
+.item1 #price {
+  opacity: 70%;
+}
+.item1 p {
+  opacity: 60%;
+}
+.item1 #price:hover {
+  opacity: 30%;
+}
+.item1 .div > h4 {
+  position: relative;
+  bottom: 300px;
+}
+/* ==========  womens bags =========== */
+.img-par1 {
+  height: 400px;
+  transition: 0.2s ease-in;
+}
+.text-bags {
+  position: relative;
+  bottom: 150px;
+  opacity: 1;
+  transition: opacity 0.7s;
+  color: white;
+  font-size: 2rem;
+  box-sizing: border-box;
+  background-color: rgb(73, 68, 68);
+  visibility: hidden;
+  text-align: center;
+  background-color: opacity 30%;
+  margin-left: 7px;
+  width: 95%;
+}
+.text-bags i {
+  position: relative;
+  bottom: 330px;
+  left: 130px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-weight: 300;
+  /* background-color: white; */
+  color: rgb(7, 7, 7);
+}
+.text-bags a:hover {
+  visibility: visible;
+  opacity: 1;
+}
+.text-bags a > img {
+  height: 100%;
+  width: 100%;
+}
+.img-par1 .text-bags1 {
+  position: relative;
+  bottom: 115px;
+  background-color: rgba(0, 0, 0, 0.445);
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s all ease-in;
+}
+.img-par1 .text-bags1 i {
+  font-size: 2.4rem;
+  position: relative;
+  bottom: 320px;
+  background-color: aliceblue;
+  padding: 3px;
+  left: 120px;
+}
+.text-bags1 a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: aliceblue;
+}
+.text-bags1 a:hover {
+  color: rgb(8, 8, 8);
+  opacity: 70%;
+}
+.img-par1:hover .text-bags1 {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ===========load more btn ====== */
+.load-more {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  position: relative;
+  top: 100px;
+  text-align: center;
+  color: rgb(7, 7, 7);
+  font-size: 1.3rem;
+  border: 3px solid;
+  padding: 20px 40px;
+  transition: 0.7s all;
+  opacity: 80%;
+}
+.load-more:hover {
+  background-color: rgba(0, 0, 0, 0.568);
+  color: rgb(8, 8, 8);
+  opacity: 100%;
+}
+
+.input-box {
+  margin-top: 10rem;
+}
+.input-button {
+  width: 100%;
+}
+#email-input {
+  width: 60%;
+  padding: 0.6rem;
+  margin-top: 2.7rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.input-button {
+  text-align: center;
+}
+.input-button button {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.418);
+  padding: 5rem;
+  font-size: 1.2rem;
+}
+.footer{
+  margin-top: 5rem;
+}
+.footer a{
+
+  font-size: 1.3rem;
+}
+/* ======== video devices chage style ====== */
+@media (max-width: 700px) {
+  .img1 .img-par {
+    width: 200px;
+    height: 70%;
+    padding: 20px 2rem;
+  }
+  .img1 img {
+    width: 100%;
+    display: none;
+  }
+  .img1 video {
+    width: 100%;
+    display: block;
+  }
+  .img-par:hover {
+    transform: none;
+  }
+  .img-par a > img {
+    height: 90%;
+  }
+  .view-all a {
+    position: absolute;
+    margin-top: 20px;
+    right: 40px;
+    font-size: 1.2rem;
+    opacity: 70%;
+  }
+  .img-par1 .text-bags1 {
+    position: relative;
+    bottom: 15px;
+    width: 90%;
+
+    background-color: rgba(0, 0, 0, 0.445);
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s all ease-in;
+  }
+
+  .img-par1 .text-bags1 {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .img-par1 .text-bags1 i {
+    font-size: 2.4rem;
+    position: relative;
+    bottom: 320px;
+    background-color: aliceblue;
+    padding: 3px;
+    left: 120px;
+    display: none;
+  }
+  .text-bags1 a {
+    text-decoration: none;
+    font-size: 2rem;
+    display: none;
+    color: aliceblue;
+  }
+  .input-button button {
+    display: block;
+    
+    margin-left: 39%;
+  }
+}
+
+
+
+/* =================== backbag style html ========================== */
+
+
+
+.main-box-side{
+  /* border: 1px solid; */
+
+}
+.im-1 img{
+width: 100%;
+}
+/* -------range style ---- */
+
+
+
+#min-range {
+  border-radius: 8px;
+  height: 10px;
+  width: 100%;
+  outline: none;
+  -webkit-appearance: none;
+  background: rgba(0, 0, 0, 0.534);
+}
+
+input[type='range']::-webkit-slider-thumb {
+  width: 10px;
+  -webkit-appearance: none;
+  height: 20px;
+  background: black;
+  border-radius: 100px;
+} 
+
+.range-div{
+  margin-top: 20px;
+  width: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.219);
+}
+
+
+/* =======bags-buy-list======== */
+
+.bags-buy-list i{
+position: relative;
+}
