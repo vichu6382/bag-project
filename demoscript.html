@@ -3,61 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Price Range</title>
-    <style>
-        /* Inline CSS for simplicity */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            text-align: center;
-        }
-        .slider-container {
-            margin: 20px auto;
-            width: 300px;
-        }
-        input[type="range"] {
-            width: 100%;
-        }
-        .output {
-            margin: 10px 0;
-            font-size: 1.2rem;
-        }
-    </style>
+    <title>One Page Slide</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery CDN -->
 </head>
 <body>
-    <h1>Price Range Filter</h1>
-    <div class="slider-container">
-        <!-- Min Range Slider -->
-        <label for="minRange">Min: </label>
-        <input type="range" id="minRange" min="0" max="2000" value="0">
-        <span id="minValue">0</span>
-        <br>
-        <!-- Max Range Slider -->
-        <label for="maxRange">Max: </label>
-        <input type="range" id="maxRange" min="0" max="2000" value="2000">
-        <span id="maxValue">2000</span>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#section1">Home</a></li>
+            <li><a href="#section2">About</a></li>
+            <li><a href="#section3">Services</a></li>
+            <li><a href="#section4">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sections -->
+    <div id="section1" class="section">
+        <h1>Home Section</h1>
     </div>
+    <div id="section2" class="section">
+        <h1>About Section</h1>
+    </div>
+    <div id="section3" class="section">
+        <h1>Services Section</h1>
+    </div>
+    <div id="section4" class="section">
+        <h1>Contact Section</h1>
+    </div>
+    <style>
+      /* Reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Sections */
+.section {
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+#section1 {
+    background-color: #4caf50;
+}
+
+#section2 {
+    background-color: #2196f3;
+}
+
+#section3 {
+    background-color: #ff5722;
+}
+
+#section4 {
+    background-color: #673ab7;
+}
+
+    </style>
+
     <script>
-        // Get elements
-        const minRange = document.getElementById('minRange');
-        const maxRange = document.getElementById('maxRange');
-        const minValue = document.getElementById('minValue');
-        const maxValue = document.getElementById('maxValue');
 
-        // Update values dynamically
-        minRange.addEventListener('input', () => {
-            if (parseInt(minRange.value) > parseInt(maxRange.value)) {
-                minRange.value = maxRange.value;
-            }
-            minValue.textContent = minRange.value;
-        });
-
-        maxRange.addEventListener('input', () => {
-            if (parseInt(maxRange.value) < parseInt(minRange.value)) {
-                maxRange.value = minRange.value;
-            }
-            maxValue.textContent = maxRange.value;
-        });
     </script>
 </body>
 </html>

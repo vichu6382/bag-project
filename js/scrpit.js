@@ -4,16 +4,6 @@
 
 
 
-// ================range ==============
-
-    const minRange = document.getElementById('min-range')
-    const minValue = document.getElementById('min-value')
-
-    minRange.addEventListener('input', () =>{
-        minValue.textContent = minRange.value
-    })
-
- 
 // =======JQUURY =========
 
 $(document).ready(function () {
@@ -57,4 +47,33 @@ $(document).ready(function () {
 
 });
 
+
+
+
+// ================range -bag -price -find ==============
+function run() {
+    const priceRange = document.getElementById("priceRange");
+    const maxPriceDisplay = document.getElementById("maxPrice");
+    const bagListItems = document.querySelectorAll("#bagList .bag-par");
+
+
+    // Update the price and filter bags
+    priceRange.addEventListener("input", () => {
+        const maxPrice = priceRange.value;
+        maxPriceDisplay.textContent = maxPrice;
+
+        bagListItems.forEach(item => {
+            const bagPrice = Number(item.dataset.price);
+           
+            if (bagPrice <= maxPrice) {
+                item.classList.remove('vishnu');
+            }
+             
+            else  {
+                item.classList.add('vishnu');
+               
+            }
+        });
+    });
+}
 

@@ -494,6 +494,14 @@ a {
   .main-box-side {
     display: none;
   }
+  
+.icon-cet{
+  font-size: 2rem;
+  
+}
+.icon-cet i{
+  margin-right: 20px;
+}
 }
 
 /* =================== backbag style html ========================== */
@@ -508,7 +516,7 @@ a {
 
 /* -------range style ---- */
 
-#min-range {
+.min-range {
   border-radius: 8px;
   height: 10px;
   width: 100%;
@@ -544,4 +552,15 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .icon-cet i{
   margin-right: 20px;
+}
+
+#bagList .bag-par.vishnu {
+  display: none; /* Hide bags that are too expensive */
+}
+
+.bag-par img{
+  width: 100%;
+}
+.bag-par.result{
+ 
 }
