@@ -33,47 +33,52 @@
 
     <!-- ================== CUSTOM CSS ============ -->
     <link rel="stylesheet" href="css/style.css" />
+
   </head>
   <body>
-    <!-- ================ NAVBAR =============== -->
-    <nav class="navbar navbar-expand-sm">
-      <div class="container-fluid">
-        <a class="navbar-brand"><strong>__BAGS__</strong></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mynavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mynavbar">
-          <ul class="navbar-nav me-auto navname">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)">CATALOG</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)">CONTENT US </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)">CASH ON DELIVERY</a>
-            </li>
+     <!-- ================ NAVBAR =============== -->
+  <nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand"><strong>__BAGS__</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto navname">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item category">
+            <a class="nav-link" href="#" id="one1">CATALOG</a>
+            <ul class="dropdown">
+              <li>
+                <div style="width: 70px; height: 70px; border-radius: 50%;">
+                  <img src="img/nav-img/nav-img1.webp" style="height: 100%; width: 100%; border-radius: 50%; display: inline-flex;" alt="">
+                </div>
+                <a href="#" style="display: inline;">Web Development</a></li>
+              <li><a href="#">Graphic Design</a></li>
+              <li><a href="#">SEO</a></li>
           </ul>
-          <div class="d-flex icon-box">
-            <i class="fa-solid fa-magnifying-glass p-2"></i>
-            <i class="fa-regular fa-heart p-2"></i>
-            <i class="fa-solid fa-bag-shopping p-2"></i>
-            <i class="fa-regular fa-user p-2"></i>
-          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTENT US </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CASH ON DELIVERY</a>
+          </li>
+        </ul>
+        <div class="d-flex icon-box">
+          <i class="fa-solid fa-magnifying-glass p-2"></i>
+          <i class="fa-regular fa-heart p-2"></i>
+          <i class="fa-solid fa-bag-shopping p-2"></i>
+          <i class="fa-regular fa-user p-2"></i>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <section class="home-contant">
       <div class="row g-3">
@@ -132,7 +137,7 @@
               <a href="" class="nav-link mt-2" id="price">Xui Jack Messenger</a>
               <p style="display: inline-block; text-decoration-line:line-through;;" class="text-dark mx-2">&#8377;1299</p>
               <p class="text-dark"  style="display: inline-block;">&#8377;599</p>
-              <div class="text-con">
+              <div class="text-con box scaleX ">
                 <i class="fa-regular fa-heart" style="font-size: 2rem;"></i>
            <a href="">  BUY</a> 
              </div>

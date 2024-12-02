@@ -9,15 +9,15 @@
 
 .navname {
   display: flex;
-  margin-left: 8rem;
+  margin-left: 16rem;
 }
 
 .navname a {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 ul li {
-  margin-left: 0.3rem;
+  margin-left: 1.9rem;
 }
 
 .icon-box i {
@@ -101,6 +101,7 @@ ul li {
 }
 
 /* ========== hover animation ========= */
+
 .item .text-con {
   position: relative;
   bottom: 130px;
@@ -284,6 +285,8 @@ a {
 }
 
 /* ==========  womens bags =========== */
+
+
 .img-par1 {
   height: 400px;
   transition: 0.2s ease-in;
@@ -494,14 +497,13 @@ a {
   .main-box-side {
     display: none;
   }
-  
-.icon-cet{
-  font-size: 2rem;
-  
-}
-.icon-cet i{
-  margin-right: 20px;
-}
+
+  .icon-cet {
+    font-size: 2rem;
+  }
+  .icon-cet i {
+    margin-right: 20px;
+  }
 }
 
 /* =================== backbag style html ========================== */
@@ -541,16 +543,12 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* =======bags-buy-list========  */
 
-
-
-
 /* ======icon -ceterogy======  */
 
-.icon-cet{
+.icon-cet {
   font-size: 2rem;
-  
 }
-.icon-cet i{
+.icon-cet i {
   margin-right: 20px;
 }
 
@@ -558,9 +556,53 @@ input[type="range"]::-webkit-slider-thumb {
   display: none; /* Hide bags that are too expensive */
 }
 
-.bag-par img{
+.bag-par img {
   width: 100%;
 }
-.bag-par.result{
- 
+.bag-par.result {
 }
+
+/* Dropdown styles */
+.dropdown {
+  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%; /* Position below the parent item */
+  left: 30%;
+  display: none; /* Hide dropdown by default */
+  min-width: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  
+}
+
+.dropdown li {
+  margin: 0;
+}
+
+.dropdown li a {
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  font-size:1.3rem;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.dropdown li:hover {
+  background-color: #555;
+  
+}
+
+.dropdown li a:hover {
+  color: black;
+  transform: scaleX();
+  
+}
+
+/* Show dropdown on hover */
+.nav-item:hover .dropdown {
+  display: block;
+}
+
+
