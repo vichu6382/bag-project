@@ -1,9 +1,3 @@
-
-
-
-
-
-
 // =======JQUURY =========
 
 $(document).ready(function () {
