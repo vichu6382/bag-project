@@ -1,0 +1,24 @@
+
+$ npm install react-router-dom --save
+
+$ npm install styled-components --save
+
+$ npm install react-transition-group --save
+
+$ npm install bootstrap --save 
+
+$ npm install jquery popper.js Next
+
+$ npm install react-bootstrap bootstrap --save
+
+$ npm install bootstrap reactstrap --save
+
+$ npm install react-table
+
+$ npm install react-bootstrap bootstrap --save
+
+$ npm install redux react-redux --save
+
+$ npm install redux react-redux --save
+
+$ npm install react-portal --save
